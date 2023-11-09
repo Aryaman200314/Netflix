@@ -173,3 +173,57 @@ nav button
     font-weight: 500;
     font-size: 40px;
 }
+
+.accordion
+{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background: grey;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+label::after
+{
+    content: '+';
+    font-size: 26px;
+    position: relative;
+    right: -484px;
+}
+input[type="radio"]
+{
+    display: none;
+}
+
+
+.accordion .content
+{
+    background: grey;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}

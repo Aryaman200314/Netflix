@@ -232,3 +232,38 @@ input[type="radio"]
 .accordion input[type="radio"]:checked + label + .content::after{
     transform: rotate(135deg);
 }
+
+
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+
+}
+
+.faq small
+{
+    font-size: 20px;
+}
+
+
+.footer
+{
+    padding: 50px 15% 10px;
+    border-top: 6px solid grey;
+    color: blue;
+}
+
+
+.footer h2 {
+    font-size: 10px;
+    font-weight: 350;
+    margin-bottom: 30px;
+}
+
+.footer .col 
+{
+    flex-basis: 25%;
+    flex-grow:1;
+    margin-bottom: 20px;
+
+}
